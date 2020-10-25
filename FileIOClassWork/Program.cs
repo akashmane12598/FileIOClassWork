@@ -16,6 +16,10 @@ namespace FileIOClassWork
                 FileWrite();
                 Console.WriteLine("Reading data from file");
                 FileRead();
+                Console.WriteLine();
+                Console.WriteLine("Using StreamReader and StreamWriter.");
+                Stream.WriteUsingStreamWriter();
+                Stream.ReadUsingStreamReader();
             }
         }
 
@@ -35,7 +39,7 @@ namespace FileIOClassWork
 
         public static void FileWrite()
         {
-            string content = "Ny Name is Akash."+"\n"+"I am an Engineer.";
+            string content = "Ny Name is Akash."+"\n"+"I am an Engineer."+"\n";
             File.WriteAllText(filePath, content);
         }
 
