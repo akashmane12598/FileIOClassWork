@@ -20,6 +20,9 @@ namespace FileIOClassWork
                 Console.WriteLine("Using StreamReader and StreamWriter.");
                 Stream.WriteUsingStreamWriter();
                 Stream.ReadUsingStreamReader();
+                Console.WriteLine();
+                BinarySerialize.Serialize();
+                BinarySerialize.Deserialize();
             }
         }
 
