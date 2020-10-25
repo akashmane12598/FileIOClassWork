@@ -28,6 +28,7 @@ namespace FileIOClassWork
             Employee employee = (Employee)formatter.Deserialize(fileStream);
             Console.WriteLine("Employee Name is "+employee.Name);
             Console.WriteLine("Employee Id is " + employee.id);
+            fileStream.Close();
         }
 
     }

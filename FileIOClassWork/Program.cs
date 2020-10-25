@@ -23,6 +23,9 @@ namespace FileIOClassWork
                 Console.WriteLine();
                 BinarySerialize.Serialize();
                 BinarySerialize.Deserialize();
+                Console.WriteLine();
+                JsonSerialize.Serialize();
+                JsonSerialize.DeSerialize();
             }
         }
 
